@@ -1,0 +1,24 @@
+{
+  "name": "cogsearch-mbox",
+  "version": "1.0.0",
+  "description": "CSS generation for cogsearch.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gencss": "postcss wwwroot/css/site.css -o wwwroot/css/site.min.css"
+  },
+  "author": "Chris Lloyd-Jones",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sealjay/cogsearch-mbox.git",
+    "directory": "webapp"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "postcss-cli": "^9.0.1",
+    "postcss-minify": "^1.1.0",
+    "tailwindcss": "^2.2.16"
+  }
+}
