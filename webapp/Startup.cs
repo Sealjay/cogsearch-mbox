@@ -23,9 +23,6 @@ namespace webapp
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<SearchProviderIndex>();
-            services.AddScoped<SearchProviderPaging>();
-            services.AddScoped<SearchProviderAutoComplete>();
             services.AddRazorPages();
             services.AddServerSideBlazor();
         }
