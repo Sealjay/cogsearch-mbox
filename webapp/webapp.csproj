@@ -11,9 +11,18 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
-
+    <PropertyGroup>
+        <BlazorLinkOnBuild Condition="'$(Configuration)'!='Release'">false</BlazorLinkOnBuild>
+    </PropertyGroup>
+    <ItemGroup>
+        <!-- extends watching group to include *.razor files -->
+        <Watch Include="..\webapp\**\*.razor" />
+    </ItemGroup>
     <ItemGroup>
       <Folder Include="Data" />
+    </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Azure.Search.Documents" Version="11.4.0-beta.4" />
     </ItemGroup>
 
 </Project>
