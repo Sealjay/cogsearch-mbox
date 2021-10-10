@@ -680,5 +680,4 @@ $RECYCLE.BIN/
 webapp/wwwroot/css/site.min.css
 ingest/Test.mbox
 **/.venv/
-ingest/*.ipynb
 webapp/appsettings.json
